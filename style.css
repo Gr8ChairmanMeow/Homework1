@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body,
+article {
+	background-color:#666;
+}
+
+#headers,
+header,
+nav,
+section,
+aside,
+footer {
+	background-color:#ccc;
+}
+
+#headers,
+header,
+nav,
+footer,
+article {
+	margin:10px;
+}
+
+section,
+aside {
+	height:200px;
+	padding:40px;
+	margin-bottom:10px;
+}
+
+section {
+	width:56%;
+	float: left;
+	margin-left:10px;
+}
+
+aside {
+	width:40%;
+	float: right;
+	margin-right:10px;
+}
+
+footer {
+	margin-top:200px;
+	height:200px;
+}
+
+article {
+	color:white;
+	overflow:auto;
+	clear:both;
+}
