@@ -1,56 +1,98 @@
+/* Style applied to all html elements to
+avoid having dimensions be altered by padding
+and borders */
 * {
   box-sizing: border-box;
   text-align: center;
+  font-family: arial;
 }
 
+/* container added to simplify alignment of
+elements on page. */
+.container {
+	padding: 0 150px;
+}
+
+/* Small boxes within article box;
+Made position relative so they will
+align RELATIVE to the container 'article' */
+#headers,
+#p {
+	position: relative;
+	height:40px;
+	padding:10px;
+	top:15%;
+}
+
+/*background and text 'color' applied to article and body */
 body,
 article {
 	background-color:#666;
+	color:#ccc;
 }
 
+/*background and text 'color' for all elements with same attributes */
 #headers,
+#p,
 header,
 nav,
 section,
 aside,
 footer {
 	background-color:#ccc;
+	color:#666;
+	margin:10px auto;
 }
 
-#headers,
-header,
-nav,
-footer,
+/* article box made position relative to 'section' box */
 article {
-	margin:10px;
+	position:relative;
+	height:175px;
+	width:100%;
+	padding:20px;
+	top:15%;
 }
 
+/* same height and padding given to section and aside boxes */
 section,
 aside {
-	height:200px;
-	padding:40px;
-	margin-bottom:10px;
+	height:275px;
+	padding:40px 10px;
 }
 
+/* attributes applied to only section box */
 section {
 	width:56%;
 	float: left;
-	margin-left:10px;
+	clear:left;
 }
 
+/*attributes applied to only aside box */
 aside {
 	width:40%;
 	float: right;
-	margin-right:10px;
+	clear:right;
 }
 
+/*margin added to footer to push it into proper positioning */
 footer {
-	margin-top:200px;
-	height:200px;
+	margin-top:315px;
 }
 
+/* clear and padding attributes added to elements that will
+behave similarly on page */
+header,
+nav,
+footer {
+	clear:both;
+	height:80px;
+	padding:20px 0px;
+}
+
+/* overflow and clear applied to article box so
+header and paragraph boxes do not spill out of
+article box container */
 article {
-	color:white;
 	overflow:auto;
 	clear:both;
 }
