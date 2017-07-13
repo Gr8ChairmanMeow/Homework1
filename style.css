@@ -76,7 +76,7 @@ aside {
 
 /*margin added to footer to push it into proper positioning */
 footer {
-	margin-top:315px;
+	margin-top:10px;
 }
 
 /* clear and padding attributes added to elements that will
@@ -95,4 +95,13 @@ article box container */
 article {
 	overflow:auto;
 	clear:both;
+}
+
+/* clearfix is f**king awesome and will help elements stack nicely. */
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
